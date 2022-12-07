@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'popins', 'sans-serif';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .container{
+            align-items: center;
+            justify-content: center;
+        }
+        .container h1{
+            padding-top: 50px;
+            padding-bottom: 35px;
+        }
+        .search{
+            width: 100%;
+            max-width: 700px;
+            background: rgba(155,255,255,0.2);
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: 10px 20px;
+        }
+        .search input{
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 24px 20px;
+            font-size: 20px;
+            color: #101013;
+        }
+        ::placeholder{
+            color: #cac7ff;
+        }
+        .sear{
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            background: #58629b;
+        }
+        p{
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+            font-size: 20px;
+            word-spacing: 5px;
+        }
+        .feedback{
+            width: 40%;
+            height: 120px;
+            background: #58629b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin-left: 450px;
+            margin-top: 50px;
+        }
+        .feedback button{
+            border: 0;
+            outline: none;
+            border-radius: 3px;
+            height: 30px;
+            width: 30px;
+        }
+        .yes{
+            background-color: greenyellow;
+            margin-right: 40px;
+            margin-top: 15px;
+        }
+        .yes:hover{
+            background-color: rgb(127, 185, 38);
+            cursor: pointer;
+        }
+        .no{
+            background-color: red;
+        }
+        .no:hover{
+            background-color: rgb(174, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><b><h1>Order Status</h1></b></center>
+        <center><form action="" method="post" class="search">
+            <input width="100px" type="text" placeholder="Tracking id" name="search">
+            <button  class="sear" id="search" type="submit"><img width="20px" height="20px" src="/images/search.png" alt="" ></button>
+        </form></center>
+        <div class="content">
+            <pre>
+                <p>
+    The order status page is the final page of your store's checkout. The order status page lets your customers:
+* Check the status of their shipment without needing to contact you directly re-order products.
+* See real-time updates on the location of their shipment.
+* Opt in to receive shipping updates by email(grocerykart722@gmail.com) after checking out by using a phone number.
+* Subscribe to receive news and offers from GKart by email.
+* Click to begin shopping in your online store again.
+                </p>
+            </pre>
+        </div>
+        <div class="feedback">
+            <center><form action=""><h2>Was this page Helpful?</h2>
+            <button type="submit"  class="yes" onsubmit="aler()">Yes</button>
+            <button type="submit"  class="no" onsubmit="alrt()">No</button></form></center>
+        </div>
+    </div>
+    </body>
+</html>

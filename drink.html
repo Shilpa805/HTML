@@ -1,0 +1,162 @@
+<html>
+<head>
+<style>
+.scroll-images {
+  width: 90%;
+  height: 390px;
+  display: flex;
+  overflow-x: Auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  overflow-scrolling: touch;
+
+}
+.buttonn {
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+div.textt {
+  padding: 8px;
+  text-align: center;
+}
+.scroll-images::-webkit-scrollbar {
+   -webkit-appearance: none;
+}
+.scroll-images2 {vertical-align:center;
+  width: 70%;
+  height: 340px;
+  display: flex;
+
+
+  overflow-x: Auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  overflow-scrolling: touch;
+
+}
+
+
+
+
+.child {object-fit: fill;
+  width: 360px;
+  height: 325px;
+  margin: 1px 1px;
+  overflow: hidden;
+}
+.child2 {object-fit: fill;
+  width: 195px;
+  height: 210px;
+  margin: 10px 10px;
+  overflow: hidden;}
+
+.scroll-images::-webkit-scrollbar {
+   -webkit-appearance: none;
+}
+.cover {
+height:400px;
+  padding: 10px 30px;
+  position: relative;
+}
+.cover2{
+height:350px;
+  padding: 10px 30px;
+  position: relative;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right {
+  position: absolute;
+  right: 80;
+  top: 50%;
+  transform: translateY(-50%);
+}
+</style>
+<script> function leftScroll() {
+        const left = document.querySelector(".scroll-images");
+        left.scrollBy(200, 0);
+      }
+      function rightScroll() {
+        const right = document.querySelector(".scroll-images");
+        right.scrollBy(-200, 0);
+      }</script></head>
+<body style="margin-left:150px;margin-top:200px;">
+<div class="cover" width="400px">
+    <button class="left" onclick="rightScroll()"><<</button>
+   <div class="scroll-images">
+           <div class="cover2">
+      <div class="scroll-images2">
+        <div class="child">
+          <img style="object-fit:contain;" class="child2" src="y.jpg" alt="image" >
+<div class="textt">Maaza Mango Drink Original Flavor  (600 ml)<br>
+<b><font size="5px">₹105 </font>  </b><font style="text-decoration:line-through;">₹175</font><font color="green">     
+40% off</font><br><button class="buttonn button1">Add to Cart</button></div>
+        </div>
+        <div class="child">
+          <img class="child2" src="y2.jpg" alt="image" >
+<div class="textt">Real Masala Pomegranate  (1 L)
+    <br>
+<b><font size="5px">₹100 </font>  </b><font style="text-decoration:line-through;">₹150</font><font color="green">     44% off</font>
+<br><button class="buttonn button1">Add to Cart</button></div>
+
+        </div>
+        <div class="child">
+          <img class="child2" src="y3.jpg" alt="image" >
+ <div class="textt">Paper boat Coconut Water  (6 x 0.2 L)<br>
+<b><font size="5px">₹88</font>  </b><font style="text-decoration:line-through;">₹100</font><font color="green">     
+11% off</font><br><button class="buttonn button1">Add to Cart</button></div>
+       </div>
+<div class="child">
+          <img class="child2" src="y4.jpg" alt="image" >
+ <div class="textt">Slice Thickest Mango Drink  (1.2 L)<br> 
+<b><font size="5px">₹102 </font>  </b><font style="text-decoration:line-through;">₹116</font><font color="green">     
+12% off</font><br><button class="buttonn button1">Add to Cart</button></div>
+       </div>
+<div class="child">
+          <img class="child2" src="y5.jpg" alt="image" >
+  <div class="textt">Paper boat Juice - Orange  (1 L)<br>
+<b><font size="5px">₹39 </font>  </b><font style="text-decoration:line-through;">₹70</font><font color="green">     
+44% off</font><br><button class="buttonn button1">Add to Cart</button></div>
+      </div>
+<div class="child">
+          <img class="child2" src="y6.jpg" alt="image" >
+ <div class="textt">Sante Wild Cranberry Fruit Drink  (250 ml)<br>
+<b><font size="5px">₹77 </font>  </b><font style="text-decoration:line-through;">₹110</font><font color="green">     
+30% off</font><br><button class="buttonn button1">Add to Cart</button></div>
+       </div>
+
+     
+
+
+
+      </div>
+    </div>
+   </div>
+   <button class="right" onclick="leftScroll()">>></button>
+</div><center>
+<a href="top2.html"><button class="buttonn button1">Back to previous page</button></a></center>
+</body>
+</html>

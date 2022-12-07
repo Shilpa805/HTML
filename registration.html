@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body background="Old Desktop Wallpapers — Candidly Keri.jpg">
+    <div class="regbg">
+        <div class="form-box">
+            <div class="button">
+                <div id="btn"></div>
+                <button type="button" class="button-f" onclick="login()">LOG IN</button>
+                <button type="button" class="button-f" onclick="register()">REGISTER</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/login/" target="_blank"><img src="fb.png" alt=""></a>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S570632030%3A1668849916270328&authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><img src="goo.png" alt=""></a>
+                
+            </div>
+            <form action="#" name="myform" id="login" class="input" onsubmit="validate()">
+                <input type="text" id="name" class="userid" placeholder="User Id">
+                <input type="password" id="password" class="userid" placeholder="Password" >
+                <input type="checkbox" class="re"><span>Remember Password</span>
+                <button type="submit" class="submit" >Log In</button>
+            </form>
+
+            <form action="#" name="myform" id="register" class="input" onsubmit= "validate()">
+                <input type="text" id="name" class="userid" placeholder="User Id" >
+                <input type="email" class="userid" placeholder="Email Id">
+                <input type="password" id="password" class="userid" placeholder="Password" >
+                <input type="checkbox" class="re"><span>I agree to the terms & condition</span>
+                <button type="submit" class="submit" >Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+        
+        function validate(){
+            var name=document.getElementById("name")
+            var password=document.getElementById("password")
+
+            if (name.value==null || name.value==""){
+                alert("Username can't be blank.")
+                return false;
+            }
+            else if (password.value.length<6){
+                alert("Password must be atleast 8 chararcter.");
+                return false;
+            }
+            alert("Backend is not connected.")
+        }
+    </script>
+</body>
+</html>
+
